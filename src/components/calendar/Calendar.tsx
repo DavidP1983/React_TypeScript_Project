@@ -7,6 +7,7 @@ import "./calendar.scss";
 
 function Calendar() {
 	const {calendarDate, getCalendarDate} = useContext(AppointmentContext);
+
 	return (
 		<div className="calendar">
 			<LibCalendar value={calendarDate} onChange={getCalendarDate}  selectRange/>

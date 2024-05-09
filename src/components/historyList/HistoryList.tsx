@@ -24,7 +24,7 @@ function HistoryList() {
 
 	return (
 		<>
-		{setContent(status, allAppointmentItemList)}
+		{setContent(status, allAppointmentItemList, calendarDate)}
 			{/* <AppointmentItem />
 			<AppointmentItem />
 			<AppointmentItem />

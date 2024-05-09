@@ -7,8 +7,6 @@ import {useLocation} from "react-router-dom";
 
 
 
-
-
 function AppointmentList() {
 	const { activeAppointmets, getActiveAppointments, status, calendarDate, getCalendarDate } = useContext(AppointmentContext);
 
@@ -48,7 +46,7 @@ function AppointmentList() {
 
 	return (
 		<>
-			{setContent(status, appointmentItemList)}
+			{setContent(status, appointmentItemList, calendarDate)}
 			<CancelModal handleModalClose={setIsOpen} itemId={itemId} isOpen={isOpen}/>
 			{/* {isOpen ? <CancelModal handleModalClose={setIsOpen} itemId={itemId}/> : null} */}
 			{/* <AppointmentItem />

@@ -4,6 +4,7 @@ import SchedulePage from "../../pages/schedule/SchedulePage";
 import HistoryPage from "../../pages/history/HistoryPage";
 import Page404 from "../../pages/404/404";
 import AppointmentsContextProvider from "../../context/appointments/AppointmentsContext";
+
 import "./app.scss";
 
 
