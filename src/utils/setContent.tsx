@@ -7,7 +7,7 @@ const setContent = (process: TStatusOptions, component: JSX.Element[]) => {
         case "loading":
             return <Spinner/>
         case "idle":
-            return component
+            return component.length !== 0 ? component : <div style={{position: "absolute", inset: "0 18%", fontWeight: 900}}>No appointments found at this request</div>
         case "error":
             return <Error/>
         default:

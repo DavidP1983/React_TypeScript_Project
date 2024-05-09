@@ -11,11 +11,14 @@
 		row-gap: 50px;
 	}
 	&__list {
+		position: relative;
 		display: grid;
 		grid-auto-rows: 140px;
 		row-gap: 25px;
 	}
 	&__reload {
+		position: absolute;
+		inset: 20% 10px;
 		padding: 10px 20px;
 		width: 150px;
 		height: 40px;

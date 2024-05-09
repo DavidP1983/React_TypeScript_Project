@@ -6,10 +6,12 @@ function Error() {
 			viewBox="0 0 499.973 391.157"
 			xmlns="http://www.w3.org/2000/svg"
 			style={{
+				position: "absolute",
 				width: "100px",
 				height: "100px",
 				display: "block",
-				margin: "0 auto",
+				inset: "0 40%"
+				// margin: "0 auto",
 			}}
 		>
 			<g id="cloud-rejected">

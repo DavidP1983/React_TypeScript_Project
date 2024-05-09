@@ -24,8 +24,7 @@ function HistoryList() {
 
 	return (
 		<>
-		{allAppointmentItemList.length ? setContent(status, allAppointmentItemList) :
-		<div style={{position: "absolute", inset: "0 18%", fontWeight: 900}}>No appointments found at this request</div>}
+		{setContent(status, allAppointmentItemList)}
 			{/* <AppointmentItem />
 			<AppointmentItem />
 			<AppointmentItem />

@@ -48,11 +48,8 @@ function AppointmentList() {
 
 	return (
 		<>
-			{activeAppointmets.length ? setContent(status, appointmentItemList) : 
-			<div style={{margin: "0 auto", fontWeight: 900}}>No appointments found at this request</div>}
+			{setContent(status, appointmentItemList)}
 			<CancelModal handleModalClose={setIsOpen} itemId={itemId} isOpen={isOpen}/>
-
-
 			{/* {isOpen ? <CancelModal handleModalClose={setIsOpen} itemId={itemId}/> : null} */}
 			{/* <AppointmentItem />
 			<AppointmentItem />

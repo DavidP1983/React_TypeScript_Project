@@ -14,7 +14,7 @@ const useAppointmentService = () => {
 
     const { process, request } = useHttp();
 
-    const _apiBase = "http://localhost:3001/appointments";
+    const _apiBase = "https://api-beauty-salon.onrender.com/appointments";
 
     // All propertys
     const getAllAppointments = async (): Promise<IAppointment[]> => {

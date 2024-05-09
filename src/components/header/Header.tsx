@@ -6,7 +6,7 @@ function Header() {
 	const match = useMatch('/');
 	return (
 		<header className="header">
-			<Link to="/" className="logo">
+			<Link to={{pathname: "/", hash: "/history"}} className="logo">
 				Beauty
 				<br />
 				Admin
