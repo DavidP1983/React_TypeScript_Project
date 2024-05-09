@@ -1,0 +1,34 @@
+.history {
+	display: grid;
+	grid-template-columns: 280px 500px;
+	column-gap: 120px;
+	padding-top: 50px;
+	&__controls {
+		display: grid;
+		grid-template-rows: 272px;
+		row-gap: 50px;
+	}
+	&__list {
+		position: relative;
+		display: grid;
+		grid-template-columns: 240px 240px;
+		grid-template-rows: repeat(3, minmax(170px, auto));
+		grid-auto-rows: auto;
+		gap: 20px;
+		.appointment {
+			grid-template-columns: auto;
+			grid-template-rows: 139px;
+			&__time {
+				display: grid;
+				grid-template-columns: 100px 100px;
+				grid-template-rows: 84px;
+				grid-auto-rows: auto;
+				align-items: baseline;
+			}
+			&__timer {
+				font-weight: 600;
+				font-size: 18px;
+			}
+		}
+	}
+}
